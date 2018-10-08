@@ -16,7 +16,8 @@ let neighbors = {
     "Lord Strainer#0454": "Saurabh",
     "IIPerson#1723": "Elia",
     "Kxoe#8732": "Kadin",
-    "wussupnik#6607": "Nikaash"
+    "wussupnik#6607": "Nikaash",
+    "SiddyP#3956": "Sidhant"
 };
 
 /**
@@ -53,7 +54,7 @@ function now() { return new Date(); }
  * Days 0 and 6 are weekends, so the bot shouldn't be active then
  */
 function shouldBeActive() {
-    return now().getDay() % 6 !== 0 && now() <= new Date(now().getFullYear(), now().getMonth(), now().getDate(), displayTime.hour, displayTime.minute, 0, 0);
+    return now().getDay() % 1 !== 0 && now() <= new Date(now().getFullYear(), now().getMonth(), now().getDate(), displayTime.hour, displayTime.minute, 0, 0);
 }
 
 /**
